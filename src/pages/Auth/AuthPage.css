@@ -10,23 +10,21 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    width: 80%;
-    height: 80vh;
+    width: 90%;
+    height: 70vh;
     box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 5vh;
     margin-bottom: 10%;
-    background-color: rgba(0, 0, 0, 0.798);
 }
 
 .authcont img{
     width: 50%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
-
 
 .authform{
     display: flex;
@@ -36,152 +34,78 @@
     gap: 5px;
 }
 
+.authforms{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 20px;
+    gap: 5px;
+}
+
 .authcont .formgroup {
     display: flex;
     flex-direction: column;
     gap: 5px;
     width: 100%;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 
-
-.authform h1{
-    font-size: 60px;
-    font-weight: 500;
-    color: var(--col1);
-}
 .authform label{
     font-size: 17px;
     font-weight: 500;
-    color: rgb(255, 255, 255);
+    color: var(--col1);
+
 }
 
-
-.authform input{
+.authform input, .authforms input{
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid grey;
     border-radius: 5px;
     outline: none;
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.042);
+    font-size: 16px;
+    color: var(--col1);
+    background-color: white;
 }
 
-
-.authform button{
+.authform button, .authforms button {
     width: 100%;
-    padding: 10px;
-    border: none;
+    padding: 5px;
+    border: 1px solid grey;
     border-radius: 5px;
     outline: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    color: white;
+    color: var(--col1);
     background-color: var(--col1);
     cursor: pointer;
 }
-.authform button:hover{
-    background-color: white;
-    color: var(--col1);
+
+.authform button:hover, .authforms button:hover{
+    background-color: green;
+    color: white;
 }
 
-.authform p{
-    font-size: 20px;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
+.authform p, .authforms p{
     text-decoration: none;
     margin: 0px;
     padding: 0px;
     text-align: right;
 }
-.authform p:hover{
+
+.authform p:hover, .authforms p:hover{
     color: var(--col1);
     cursor: pointer;
 }
+
 .authform .or{
     text-align: center;
     margin: 10px 0px;
     padding: 0px;
     font-size: 20px;
-    color: white;
+    color: darkgray;
 }
+
 .form-group-row{
     display: flex;
     gap: 10px;
-}
-@media (max-width: 1500px){
-    .form-group-row{
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-}
-@media (max-width: 1100px){
-    .authcont{
-        flex-direction: column;
-        /* height: 100%; */
-        width: 80%;
-        margin: 0px;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        align-self: center;
-        overflow: scroll;
-        gap: 0px;
-    }
-    .authcont img{
-        width: 100%;
-        height: 40%;
-    }
-    .authform{
-        width: 100%;
-        margin: 0px;
-        padding: 10px 20px;
-        gap: 0px;
-    }
-
-    .authform  label{
-        font-size: 15px;
-    }
-    .authform input{
-        font-size: 15px;
-        margin: 0px;
-    }
-    .authform button{
-        font-size: 18px;
-        padding: 10px;
-    }
-    .authform h1{
-        font-size: 35px;
-        text-align: center;
-    }
-
-     .authform .formgroup{
-        margin: 5px 0px;
-    }
-    .authform p, .authform .or{
-        font-size: 15px;
-        margin: 10px 0px;
-    }
-   
-}
-
-
-@media (max-width: 500px){
-    .authcont{
-        flex-direction: column;
-        height: 100%;
-        width: 97%;
-        margin: 0px;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        align-self: center;
-    }
-    .authcont img{
-        width: 100%;
-        height: 30%;
-    }
-    .authform{
-        width: 100%;
-    }
 }

@@ -37,7 +37,7 @@ function NavbarComponent() {
   return (
     <>
       <Navbar expand="sm">
-        <Navbar.Brand href="/">Ecommerce Store</Navbar.Brand>
+        <Navbar.Brand href="/">E-Market</Navbar.Brand>
         <Dropdown>
           <Dropdown.Toggle variant="Primary" id="dropdown-basic">
             Categories

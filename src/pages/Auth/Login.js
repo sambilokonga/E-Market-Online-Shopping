@@ -6,7 +6,7 @@ const Login = () => {
     <div className="authpage">
       <div className="authcont">
         <img
-          src="/assets/images/istockphoto-1306668349-612x612.jpg"
+          src="https://img.freepik.com/free-photo/showing-cart-trolley-shopping-online-sign-graphic_53876-133967.jpg"
           alt="login"
         />
 
@@ -28,7 +28,7 @@ const Login = () => {
           <Link to="/" className="stylenone">
             <button className="btn">Login</button>
           </Link>
-          <h2 className="or">OR</h2>
+          <h6 className="or">OR</h6>
           <Link to="/signup" className="stylenone">
             <button className="btn">Signup</button>
           </Link>

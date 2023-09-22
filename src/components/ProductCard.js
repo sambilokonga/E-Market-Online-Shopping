@@ -26,6 +26,7 @@ function ProductCard(props) {
                   <Button
                     sm="6"
                     className="mx-2"
+                    variant="success"
                     onClick={() => cart.addOneToCart(product.id)}
                   >
                     +
@@ -33,6 +34,7 @@ function ProductCard(props) {
                   <Button
                     sm="6"
                     className="mx-2"
+                    variant="warning"
                     onClick={() => cart.removeOneFromCart(product.id)}
                   >
                     -

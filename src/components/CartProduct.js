@@ -3,6 +3,7 @@ import { CartContext } from "../CartContext";
 import { useContext } from "react";
 import { getProductData } from "../ProductStore";
 import Fade from "react-reveal/Fade";
+import Stack from "react-bootstrap/Stack";
 
 function CartProduct(props) {
   const cart = useContext(CartContext);
@@ -12,16 +13,27 @@ function CartProduct(props) {
 
   return (
     <>
-      <Fade left cascade>
-        <h3>{productData.title}</h3>
-        <img src={productData.imgUrl} height="200px" alt="" />
-        <p>{quantity} total</p>
-        <p>${(quantity * productData.price).toFixed(2)}</p>
-        <Button size="sm" onClick={() => cart.deleteFromCart(id)}>
-          Remove
-        </Button>
-        <hr></hr>
-      </Fade>
+      <Stack direction="horizontal" gap={3}>
+        <Fade left cascade>
+          <div className="p-2">
+            <h3>{productData.title}</h3>
+            <p>{quantity} total</p>
+            <p>${(quantity * productData.price).toFixed(2)}</p>
+            <Button
+              variant="danger"
+              size="sm"
+              onClick={() => cart.deleteFromCart(id)}
+            >
+              Remove
+            </Button>
+          </div>
+          <div className="p-2">
+            <img src={productData.imgUrl} height="150px" alt="" />
+          </div>
+
+          <hr></hr>
+        </Fade>
+      </Stack>
     </>
   );
 }

@@ -6,11 +6,11 @@ const Signup = () => {
     <div className="authpage">
       <div className="authcont">
         <img
-          src="/assets/images/istockphoto-1311600080-612x612.jpg"
+          src="https://img.freepik.com/free-photo/showing-cart-trolley-shopping-online-sign-graphic_53876-133967.jpg"
           alt="signup"
         />
 
-        <form className="authform">
+        <form className="authforms">
           <h1>Signup</h1>
           <div className="form-group-row">
             <div className="formgroup">
@@ -41,7 +41,7 @@ const Signup = () => {
           <Link to="/login" className="stylenone">
             <p>Already have an account?</p>
           </Link>
-          <Link to="/signup" className="stylenone">
+          <Link to="/" className="stylenone">
             <button className="btn">Signup</button>
           </Link>
         </form>
